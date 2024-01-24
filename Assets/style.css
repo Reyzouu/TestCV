@@ -1,97 +1,138 @@
 body {
-
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
-
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header, nav, aside, main, footer {
-
+    box-sizing: border-box;
 }
 
 header, nav {
-
+    text-align: center;
+    padding: 20px;
+    background-color: #782221;
+    color: white;
+    width: 100%;
 }
 
 header img {
-
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
 }
 
 header img:hover {
-
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 header img:active {
-
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 h1, h2 {
-
+    margin: 0;
 }
 
 h1, h2, h3, h4 {
-
+    font-family: 'Lato.zip', sans-serif;
 }
 
 nav {
-
+    display: flex;
+    justify-content: space-between;
+    background-color: #2c1d27;
+    color: white;
+    padding: 35px;
 }
 
 nav a {
-
+    flex: 1;
+    text-align: center;
 }
 
 .info-left {
-
+    text-align: left;
 }
 
 .info-right {
-
+    text-align: right;
 }
 
 aside {
-
+    flex: 1;
+    max-width: 33%;
+    padding: 10px;
+    border-right: 2px solid #2c1d27;
+    background-color: #782221;
+    color: white;
 }
 
 main {
-
+    flex: 2;
+    padding: 10px;
 }
 
 aside h3 {
-
+    background-color: #dbc2a4;
+    margin-left: 0;
+    padding: 15px;
 }
 
 main .main-section section {
-
+    background-color: white;
+    padding: 15px;
 }
 
 h4 {
-
+    background-color: #dbc2a4;
+    border-left: 5px solid #782221;
+    padding-left: 10px;
 }
 
 footer {
-
+    width: 100%;
+    text-align: center;
+    background-color: #782221;
+    color: white;
+    padding: 25px;
 }
 
 .social-icons {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-icons img {
-
+    width: 70px;
+    margin: 0 10px;
 }
 
 .social-icons img:hover {
-
+    opacity: 0.5;
 }
 
 a:hover{
-
+    text-decoration: underline;
 }
 
 li:hover{
-
+    border-right: 5px solid #782221;
 }
 
 @font-face {
@@ -100,5 +141,5 @@ li:hover{
 }
 
 h4, p, li{
-    
+    font-family: 'Raleway';
 }
